@@ -18,6 +18,9 @@ public class StringMethods {
             System.out.println("Consider using a longer password.");
         }
 
+
+
+
         // lowercase
         // emails are usually lowercase
         String email = "Clara.James@MINNEAPOLIS.edu";
