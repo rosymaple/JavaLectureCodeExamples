@@ -10,29 +10,22 @@ public class BloodDonor {
         // A person can be a blood donor if
         // they weigh at least 110lbs AND are 17 or over
 
-        System.out.println("What is your weight?");
-        double weight = doubleInput();
+        System.out.println("What is your weight?");     // prints message for user
+        double weight = doubleInput();      // initializes our "double" weight variable using doubleInput
 
-        System.out.println("How old are you?");
-        int age = intInput();
+        System.out.println("How old are you?");     // prints message for user
+        int age = intInput();       // initializes our "int" age variable using intInput
 
-        if (weight >= 110 && age >= 17) {
-            System.out.println("You are eligible to be a blood donor.");
-        } else {
-            System.out.println("Sorry, you are not eligible.");
-            if (weight > 110) {
-                System.out.println("You do not weigh enough to donate blood.");
-            }
-            if (age < 17) {
-                System.out.println("You are not old enough to donate blood.");
-            }
-        }
-
-
-
-
-    }
-
-
-
-}
+        if (weight >= 110 && age >= 17) {       // if weight is over 110 and age is over 17
+            System.out.println("You are eligible to be a blood donor.");    // prints positive message for user
+        } else {        // if-else statement, if they are not over 110 AND age is not over 17
+            System.out.println("Sorry, you are not eligible.");     // prints message for user
+            if (weight > 110) {     // if weight is under 110
+                System.out.println("You do not weigh enough to donate blood.");     // prints message
+            }       // end of second if statement in this block of code
+            if (age < 17) {     // if age is under 17 ...
+                System.out.println("You are not old enough to donate blood.");      // prints message
+            }       // end of third if statement in this block of code
+        }       // end of if-else block
+    }       // end of public main method
+}       // end of public class
